@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class ReusableCustomIconWidget extends StatelessWidget {
   const ReusableCustomIconWidget({
     super.key, required this.icon, required this.text,
@@ -17,10 +19,7 @@ class ReusableCustomIconWidget extends StatelessWidget {
         ),
         SizedBox(height: 15.0,),
         Text( text,
-          style: TextStyle(
-              color: Colors.grey,
-              fontSize: 18.0
-          ),
+          style: kTextStyling,
         )
       ],
     );
